@@ -34,7 +34,6 @@ public class Postulante implements Serializable {
         return m.calcularPuntajeAdicional(this);
     }
 
-    // Getters
     public String getId() {
         return id; 
     }
