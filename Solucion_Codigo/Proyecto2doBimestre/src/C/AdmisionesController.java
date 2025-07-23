@@ -33,8 +33,13 @@ public class AdmisionesController {
         } catch (IOException e) { e.printStackTrace(); }
     }
 
-    public void inscribir(Postulante p) { postulantes.add(p); }
-    public void agregarCarrera(Carrera c) { carreras.add(c); }
+    public void inscribir(Postulante p) {
+        postulantes.add(p); 
+    }
+    
+    public void agregarCarrera(Carrera c) {
+        carreras.add(c); 
+    }
 
     public void procesarAdmisiones() {
         for (Carrera c : carreras) {
@@ -48,6 +53,11 @@ public class AdmisionesController {
         }
     }
 
-    public List<Postulante> getPostulantes() { return postulantes; }
-    public List<Carrera> getCarreras() { return carreras; }
+    public List<Postulante> getPostulantes() {
+        return postulantes; 
+    }
+    
+    public List<Carrera> getCarreras() {
+        return carreras; 
+    }
 }
